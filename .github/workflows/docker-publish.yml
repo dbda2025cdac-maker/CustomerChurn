@@ -33,4 +33,4 @@ jobs:
           push: true
           # REPLACE 'your-dockerhub-username/your-repo-name' BELOW
           # Example: johndoe/telco-churn-app:latest
-          tags: dbdacdac12/CustomerChurn:latest
+          tags: dbdacdac12/customerchurn:latest
