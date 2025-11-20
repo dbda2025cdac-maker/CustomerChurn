@@ -1,6 +1,6 @@
 # Telecom Customer Churn Prediction
 
-A Flask web application that predicts customer churn using machine learning models trained on telecom customer data.
+A Flask web application that predicts customer churn using machine learning models trained on telecom customer data with automatic **dockerhub image being updated (CI/CD Process)**.
 
 ## Features
 
