@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Customer Churn Prediction</header>
+        
+        <form action="http://localhost:5000/" method="POST">
+            <div class="user-details">
+                
+                <div class="input-box">
+                    <label for="query1">Senior Citizen:</label>
+                    <div>
+                        <select name="query1" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="query2">Monthly Charges:</label>
+                    <input type="text" id="query2" name="query2" required>                    
+                </div>
+
+                <div class="input-box">
+                    <label for="query3">Total Charges:</label>
+                    <input type="text" id="query3" name="query3" required>                    
+                </div>
+
+                <div class="input-box">
+                    <label for="query4">Gender:</label>
+                    <div>
+                        <select name="query4" required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label for="query5">Partner:</label>
+                    <div>
+                        <select name="query5" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="query6">Dependents:</label>
+                    <div>
+                        <select name="query6" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label for="query7">Phone Service:</label>
+                    <div>
+                        <select name="query7" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label for="query8">Multiple Lines:</label>
+                    <div>
+                        <select name="query8" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-box">
+                    <label for="query9">Internet Service:</label>
+                    <div>
+                        <select name="query9" required>
+                            <option value="DSL">DSL</option>
+                            <option value="Fiber optic">Fiber Optic</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label for="query10">Online Security:</label>
+                    <div>
+                        <select name="query10" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-box">
+                    <label for="query11">Online Backup:</label>
+                    <div>
+                        <select name="query11" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-box">
+                    <label for="query12">Device Protection:</label>
+                    <div>
+                        <select name="query12" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-box">
+                    <label for="query13">Tech Support:</label>
+                    <div>
+                        <select name="query13" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-box">
+                    <label for="query14">Streaming TV:</label>
+                    <div>
+                        <select name="query14" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-box">
+                    <label for="query15">Streaming Movies:</label>
+                    <div>
+                        <select name="query15" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-box">
+                    <label for="query16">Contract:</label>
+                    <div>
+                        <select name="query16" required>
+                            <option value="Month-to-month">Month to Month</option>
+                            <option value="One year">One Year</option>
+                            <option value="Two year">Two Year</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-box">
+                    <label for="query17">Paperless Billing:</label>
+                    <div>
+                        <select name="query17" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-box">
+                    <label for="query18">Payment Method:</label>
+                    <div>
+                        <select name="query18" required>
+                            <option value="Electronic check">Electronic Check</option>
+                            <option value="Mailed check">Mailed Check</option>
+                            <option value="Bank transfer (automatic)">Bank Transfer</option>
+                            <option value="Credit card (automatic)">Credit Card</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="input-box">
+                    <label for="query19">Tenure:</label>
+                    <input type="text" id="query19" name="query19" required>                    
+                </div>
+            </div>
+
+            <div class="button">
+                <button type="submit" name="submit">SUBMIT</button>
+            </div>
+        </form>
+
+        <div class="user-output">
+
+            <div class="model">
+                {% if outputRF %}
+                    <div>Random Forest Prediction:</div>
+                    {% if outputRF == 1 %}
+                        <span class="churn" style="color: red;">This customer will likely churn</span>
+                    {% else %}
+                        <span class="no-churn" style="color: green;">This customer will likely continue</span>
+                    {% endif %}
+                {% endif %}
+            </div>
+
+            <div class="model">
+                {% if outputDF %}
+                    <div>Decision Tree Prediction:</div>
+                    {% if outputDF == 1 %}
+                        <span class="churn" style="color: red;">This customer will likely churn</span>
+                    {% else %}
+                        <span class="no-churn" style="color: green;">This customer will likely continue</span>
+                    {% endif %}
+                {% endif %}
+            </div>    
+        </div>
+    </div>
+
+</body>
+
+</html>
